@@ -23,6 +23,78 @@ The minimal cut for this graph is $(\{s, A, B, C\}, \{D, t\})$ with a flow of $5
 
 \section{} %2
 
+An empty cell means that there is no path. You could also fill in $\infty$ everywhere.
+
+\begin{tabular}{|c|c|c|c|c|}
+	\hline
+	1 & A & B & C & D\\
+	\hline
+	A & 0 & 7 && 2\\
+	\hline
+	B & 1 & 0 & 9 &\\
+	\hline
+	C & 4 && 0 &\\
+	\hline
+	D & 8 && 3 & 0\\
+	\hline
+\end{tabular}
+
+\begin{tabular}{|c|c|c|c|c|}
+	\hline
+	2 & A & B & C & D\\
+	\hline
+	A & 0 & 7 && 2\\
+	\hline
+	B & 1 & 0 & 9 & 3\\
+	\hline
+	C & 4 & 11 & 0 & 6\\
+	\hline
+	D & 8 & 15 & 3 & 0\\
+	\hline
+\end{tabular}
+
+\begin{tabular}{|c|c|c|c|c|}
+	\hline
+	3 & A & B & C & D\\
+	\hline
+	A & 0 & 7 & 16 & 2\\
+	\hline
+	B & 1 & 0 & 9 & 3\\
+	\hline
+	C & 4 & 11 & 0 & 6\\
+	\hline
+	D & 8 & 15 & 3 & 0\\
+	\hline
+\end{tabular}
+
+\begin{tabular}{|c|c|c|c|c|}
+	\hline
+	4 & A & B & C & D\\
+	\hline
+	A & 0 & 7 & 16 & 2\\
+	\hline
+	B & 1 & 0 & 9 & 3\\
+	\hline
+	C & 4 & 11 & 0 & 6\\
+	\hline
+	D & 7 & 14 & 3 & 0\\
+	\hline
+\end{tabular}
+
+\begin{tabular}{|c|c|c|c|c|}
+	\hline
+	5 & A & B & C & D\\
+	\hline
+	A & 0 & 7 & 5 & 2\\
+	\hline
+	B & 1 & 0 & 6 & 3\\
+	\hline
+	C & 4 & 11 & 0 & 6\\
+	\hline
+	D & 7 & 14 & 3 & 0\\
+	\hline
+\end{tabular}
+
 \section{} %3
 
 Graph $G$ contains two strongly connected components. The first one ($X$) consists of $A, D, E, G$ and the other one ($Y$) contains $B, C, F, H$. The component graph thus looks like this:
