@@ -25,6 +25,15 @@ The minimal cut for this graph is $(\{s, A, B, C\}, \{D, t\})$ with a flow of $5
 
 \section{} %3
 
+Graph $G$ contains two strongly connected components. The first one ($X$) consists of $A, D, E, G$ and the other one ($Y$) contains $B, C, F, H$. The component graph thus looks like this:
+
+\begin{tikzpicture}[every node/.style={circle, draw, minimum width=2em}]
+	\node (A) {X};
+	\node [right=of A] (B) {Y};
+
+	\draw[->, thick] (A) -- (B);
+\end{tikzpicture}
+
 \section{} %4
 
 Initial state:
